@@ -1,3 +1,36 @@
+# Overview
+
+In this project, I plan on building a data tracker. I hope to eventually be able to collect a massive amount of personal data, then use data science to process it in order to help promote the health and longevity of the user. During this sprint, I learned about laravel, a php-based framework. I learned about migrations, models, controllers, and routes in order to begin the backend of my project. I also learned about bearer tokens and how they are used in authenticating a user. I also had to remind myself of some MySQL syntax to set up my database. 
+
+{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
+
+[Software Demo Video](https://youtu.be/yNWlIBh0GbM)
+
+# Development Environment
+
+- herd
+- visual studio code
+- laravel
+- php
+- mysql
+- postman
+
+# Useful Websites
+
+{Make a list of websites that you found helpful in this project}
+
+- [Youtube Tutorial - Laravel From Scratch 2022](https://www.youtube.com/watch?v=MYyJ4PuL4pY&t=4191s)
+- [Youtube Tutorial - Laravel API Authentication using JWT Tokens](https://www.youtube.com/watch?v=jIzPuM76-nI&list=PLlameCF3cMEtVCB8awarHu1NjIyEX0Va9)
+- [Laravel Documentation](https://laravel.com/docs)
+- [ChatGPT](https://chat.openai.com/?model=gpt-4)
+
+# Future Work
+
+- Set up models and controllers for the rest of my data
+- Set up the front end of my project
+- connect my app to a web server
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
