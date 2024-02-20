@@ -52,7 +52,7 @@ class AuthController extends Controller
         if ($tokenRevoked) {
             return response()->json(['message' => 'Successfully logged out']);
         } else {
-            return response()->json(['message' => 'You are not logged out :('], 400); // 400 Bad Request
+            return response()->json(['message' => 'You are not logged out'], 400); // 400 Bad Request
         }
     }
 
