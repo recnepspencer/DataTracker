@@ -1,99 +1,43 @@
 # Overview
 
-In this project, I plan on building a data tracker. I hope to eventually be able to collect a massive amount of personal data, then use data science to process it in order to help promote the health and longevity of the user. During this sprint, I learned about laravel, a php-based framework. I learned about migrations, models, controllers, and routes in order to begin the backend of my project. I also learned about bearer tokens and how they are used in authenticating a user. I also had to remind myself of some MySQL syntax to set up my database. 
+<p>I attempted to migrate the project I've been working on so far to AWS. </p>
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
+<p>I did this because I believe being dynamic in my skills and abilities will make me attractive to employers. I think even if you are a developer who works on a very specific piece of the pie, you are more useful if you know how the whole assembly line works. Even if it just makes you better at troubleshooting, I think it is worth getting a broad knowledge.  </p>
 
-[Software Demo Video](https://youtu.be/yNWlIBh0GbM)
+<h3>Youtube Link</h3>
+
+[Software Demo Video](https://youtu.be/iBaFNa68AiI)
+
+# Cloud Database
+
+I used AWS RDS to create a database. I used MySQL as the database engine. I used the free tier, so I didn't have to pay for it. The setup was really hard. I had to set up security groups, an ec2 instance, a whole virtual machine without a gui to set up the enviornment, a domain name, and an elastic IP. It was one of the more difficult projects I've done. I don't think there was any one piece that was hard. It is more like solving a 1000 piece puzzle. It is hard to do, but not because any one piece is hard.
 
 # Development Environment
 
-- herd
-- visual studio code
-- laravel
-- php
-- mysql
-- postman
+-- AWS RDS
+-- AWS EC2
+-- AWS Elastic IP
+-- AWS Security Groups
+-- AWS Route 53
+-- Ubuntu Server 
+-- MySQL
+-- composer
+-- php
+-- apache2
+-- laravel 
+
+
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
 
-- [Youtube Tutorial - Laravel From Scratch 2022](https://www.youtube.com/watch?v=MYyJ4PuL4pY&t=4191s)
-- [Youtube Tutorial - Laravel API Authentication using JWT Tokens](https://www.youtube.com/watch?v=jIzPuM76-nI&list=PLlameCF3cMEtVCB8awarHu1NjIyEX0Va9)
-- [Laravel Documentation](https://laravel.com/docs)
-- [ChatGPT](https://chat.openai.com/?model=gpt-4)
+- [Chat Gpt](https://chat.openai.com/?model=gpt-4)
+- [Stack Overflow](https://stackoverflow.com/)
 
 # Future Work
 
-- Set up models and controllers for the rest of my data
-- Set up the front end of my project
-- connect my app to a web server
 
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Deploy Front End
+- Fix the CORS bug 
+- Set up a way to manage production and development code so that i can launch updates to the web
