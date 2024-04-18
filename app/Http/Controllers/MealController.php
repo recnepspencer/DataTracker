@@ -38,18 +38,42 @@ class MealController extends Controller
         return response()->json(['message' => 'Meal and ingredients added successfully'], 200);
     }
 
+    public function show($mealId)
+    {
+        $meal = Meal::with('ingredients')->findOrFail($mealId); // Eager load ingredients to minimize queries
+
+        return response()->json($meal, 200);
+    }
+
     public function update(Request $request, $mealId)
     {
         $meal = Meal::findOrFail($mealId);
-
+    
         $validated = $request->validate([
             'recipeName' => 'sometimes|string|max:255',
             'servings' => 'sometimes|integer',
+            'ingredients' => 'sometimes|array',
+            'ingredients.*.id' => 'required|integer|exists:ingredients,id',
+            'ingredients.*.name' => 'sometimes|string|max:255',
+            'ingredients.*.quantity' => 'sometimes|string',
+            'ingredients.*.protein' => 'sometimes|numeric',
+            'ingredients.*.fat' => 'sometimes|numeric',
+            'ingredients.*.carbs' => 'sometimes|numeric',
         ]);
-
-        $meal->update($validated);
-
-        return response()->json(['message' => 'Meal updated successfully'], 200);
+    
+        $meal->update([
+            'recipe' => $validated['recipeName'] ?? $meal->recipe,
+            'servings' => $validated['servings'] ?? $meal->servings,
+        ]);
+    
+        if (isset($validated['ingredients'])) {
+            foreach ($validated['ingredients'] as $ingredientData) {
+                $ingredient = Ingredient::findOrFail($ingredientData['id']);
+                $ingredient->update($ingredientData);
+            }
+        }
+    
+        return response()->json(['message' => 'Meal and ingredients updated successfully'], 200);
     }
 
     public function index()
